@@ -4,7 +4,10 @@
   "description": "webpack2 starter kit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run dev",
+    "dev": "webpack-dev-server",
+    "prod": "npm run clean && set NODE_ENV=production && webpack --config webpack.config.js -p --progress --colors",
+    "clean": "rimraf ./dist/*"
   },
   "repository": {
     "type": "git",
