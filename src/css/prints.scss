@@ -1,0 +1,8 @@
+@media print{
+  a{
+    text-decoration: underline;
+  }
+  [href]:not([hrefˆ="#"]):after{
+    content: '(' attr(href) ')';
+  }
+}
